@@ -1,0 +1,14 @@
+*** ./smali/com/android/server/input/InputManagerService$WindowManagerCallbacks.smali	2016-02-08 00:28:33.485054492 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/services.jar.out/./smali/com/android/server/input/InputManagerService$WindowManagerCallbacks.smali	2016-02-08 00:27:56.832939055 -0200
+***************
+*** 33,38 ****
+--- 33,41 ----
+  .method public abstract notifyANR(Lcom/android/server/input/InputApplicationHandle;Lcom/android/server/input/InputWindowHandle;Ljava/lang/String;)J
+  .end method
+  
++ .method public abstract notifyBackLidSwitchChanged(JZ)V
++ .end method
++ 
+  .method public abstract notifyConfigurationChanged()V
+  .end method
+  

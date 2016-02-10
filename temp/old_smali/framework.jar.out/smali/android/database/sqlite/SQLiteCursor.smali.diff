@@ -1,0 +1,15 @@
+*** ./smali/android/database/sqlite/SQLiteCursor.smali	2016-02-08 00:28:24.281025495 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/framework.jar.out/./smali/android/database/sqlite/SQLiteCursor.smali	2016-02-08 00:27:47.728910397 -0200
+***************
+*** 594,599 ****
+--- 594,603 ----
+      :cond_0
+      invoke-direct {p0, p2}, Landroid/database/sqlite/SQLiteCursor;->fillWindow(I)V
+  
++     iget-object v0, p0, Landroid/database/sqlite/SQLiteCursor;->mWindow:Landroid/database/CursorWindow;
++ 
++     invoke-static {p0, v0, p1, p2}, Landroid/database/sqlite/SQLiteCursorInjector;->middle_onMove_calib_count(Landroid/database/sqlite/SQLiteCursor;Landroid/database/CursorWindow;II)V
++ 
+      :cond_1
+      const/4 v0, 0x1
+  

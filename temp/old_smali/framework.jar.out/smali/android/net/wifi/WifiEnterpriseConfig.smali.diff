@@ -1,0 +1,13 @@
+*** ./smali/android/net/wifi/WifiEnterpriseConfig.smali	2016-02-08 00:28:27.381035261 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/framework.jar.out/./smali/android/net/wifi/WifiEnterpriseConfig.smali	2016-02-08 00:27:50.692919726 -0200
+***************
+*** 1933,1938 ****
+--- 1933,1940 ----
+          :pswitch_0
+          :pswitch_0
+          :pswitch_0
++         :pswitch_0
++         :pswitch_0
+      .end packed-switch
+  .end method
+  

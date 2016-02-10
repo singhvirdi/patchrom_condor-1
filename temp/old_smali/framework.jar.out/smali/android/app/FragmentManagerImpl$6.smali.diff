@@ -1,0 +1,17 @@
+*** ./smali/android/app/FragmentManagerImpl$6.smali	2016-02-08 00:28:13.744992308 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/framework.jar.out/./smali/android/app/FragmentManagerImpl$6.smali	2016-02-08 00:27:36.800876004 -0200
+***************
+*** 49,54 ****
+--- 49,60 ----
+  
+      iget-object v0, p0, Landroid/app/FragmentManagerImpl$6;->val$finalFragment:Landroid/app/Fragment;
+  
++     iget-boolean v0, v0, Landroid/app/Fragment;->mHidden:Z
++ 
++     if-eqz v0, :cond_0
++ 
++     iget-object v0, p0, Landroid/app/FragmentManagerImpl$6;->val$finalFragment:Landroid/app/Fragment;
++ 
+      iget-object v0, v0, Landroid/app/Fragment;->mView:Landroid/view/View;
+  
+      const/16 v1, 0x8

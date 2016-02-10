@@ -1,0 +1,19 @@
+*** ./smali/com/android/internal/telephony/TelephonyCapabilities.smali	2016-02-08 00:28:31.549048392 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/telephony-common.jar.out/./smali/com/android/internal/telephony/TelephonyCapabilities.smali	2016-02-08 00:27:54.856932834 -0200
+***************
+*** 8,14 ****
+  
+  
+  # direct methods
+! .method private constructor <init>()V
+      .locals 0
+  
+      .prologue
+--- 8,14 ----
+  
+  
+  # direct methods
+! .method public constructor <init>()V
+      .locals 0
+  
+      .prologue
