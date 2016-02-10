@@ -1,0 +1,13 @@
+*** ./smali/android/net/wifi/SupplicantStateTracker$CompletedState.smali	2016-02-08 00:28:26.813033472 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/framework.jar.out/./smali/android/net/wifi/SupplicantStateTracker$CompletedState.smali	2016-02-08 00:27:50.152918026 -0200
+***************
+*** 71,76 ****
+--- 71,78 ----
+      # setter for: Landroid/net/wifi/SupplicantStateTracker;->mNetworksDisabledDuringConnect:Z
+      invoke-static {v0, v1}, Landroid/net/wifi/SupplicantStateTracker;->access$602(Landroid/net/wifi/SupplicantStateTracker;Z)Z
+  
++     invoke-static {}, Landroid/net/wifi/SupplicantStateTrackerInjector;->handleNetworkConnectionComplete()V
++ 
+      :cond_0
+      return-void
+  .end method

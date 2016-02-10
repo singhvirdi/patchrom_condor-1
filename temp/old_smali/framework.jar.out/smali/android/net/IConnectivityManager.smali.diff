@@ -1,0 +1,31 @@
+*** ./smali/android/net/IConnectivityManager.smali	2016-02-08 00:28:28.125037604 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/framework.jar.out/./smali/android/net/IConnectivityManager.smali	2016-02-08 00:27:51.432922056 -0200
+***************
+*** 447,456 ****
+--- 447,472 ----
+      .end annotation
+  .end method
+  
++ .method public abstract startUsingNetworkFeatureMSim(ILjava/lang/String;Landroid/os/IBinder;I)I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
+  .method public abstract stopUsingNetworkFeature(ILjava/lang/String;)I
+      .annotation system Ldalvik/annotation/Throws;
+          value = {
+              Landroid/os/RemoteException;
++         }
++     .end annotation
++ .end method
++ 
++ .method public abstract stopUsingNetworkFeatureMSim(ILjava/lang/String;I)I
++     .annotation system Ldalvik/annotation/Throws;
++         value = {
++             Landroid/os/RemoteException;
+          }
+      .end annotation
+  .end method

@@ -1,0 +1,23 @@
+*** ./smali/com/android/internal/app/LocalePicker.smali	2016-02-08 00:28:39.417073184 -0200
+--- /home/kowak/patchrom/condor/temp/new_smali/framework2.jar.out/./smali/com/android/internal/app/LocalePicker.smali	2016-02-08 00:28:03.788960956 -0200
+***************
+*** 464,470 ****
+      goto :goto_3
+  
+      :cond_6
+!     invoke-static {v6}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
+  
+      const-string v2, "layout_inflater"
+  
+--- 464,474 ----
+      goto :goto_3
+  
+      :cond_6
+!     new-instance v2, Landroid/miui/LocaleComparator;
+! 
+!     invoke-direct {v2}, Landroid/miui/LocaleComparator;-><init>()V
+! 
+!     invoke-static {v6, v2}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
+  
+      const-string v2, "layout_inflater"
+  
