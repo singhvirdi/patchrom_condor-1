@@ -61,7 +61,8 @@ fi
 if [ $1 = "MiuiSystemUI" ];then
     applyPatch $1 $2
     $XMLMERGYTOOL $1/res/values $2/res/values
-    changeID $1
+    ../tools/idtoname.py ../tools/public-miui.xml $2/smali
+    ../tools/nametoid.py framework-res/res/values/public.xml $2/smali
 fi
 
 if [ $1 = "DeskClock" ];then

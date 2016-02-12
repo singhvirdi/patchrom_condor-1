@@ -59,6 +59,3 @@ local-pre-zip-misc:
 	echo "debug.sf.hw=1" >> $(ZIP_DIR)/system/build.prop
 	echo "debug.composition.type=dyn" >> $(ZIP_DIR)/system/build.prop
 	echo "debug.mdpcomp.maxlayer=3" >> $(ZIP_DIR)/system/build.prop
-	#PowerKeeper and Whetstone
-	echo "persist.sys.mcd_config_file=/system/etc/mcd_default.conf" >> $(ZIP_DIR)/system/build.prop
-	echo "persist.sys.klo=on" >> $(ZIP_DIR)/system/build.prop

@@ -34,6 +34,5 @@ SettingsProvider \
 ProxyHandler \
 SharedStorageBackup \
 Shell \
-ThemesProvider \
 VpnDialogs \
 WallpaperCropper 

@@ -27,10 +27,10 @@ then
 	cp -rf overlay/framework/* $BUILD_OUT/framework
 fi
 
-#if [ $2 = "$BUILD_OUT/framework2" ]
-#then
-#    applyPatch "overlay/framework2"
-#fi
+if [ $2 = "$BUILD_OUT/framework2" ]
+then
+    applyPatch "overlay/framework2"
+fi
 
 #if [ $2 = "$BUILD_OUT/telephony-common" ]
 #then
@@ -38,10 +38,16 @@ fi
 
 if [ $2 = "$BUILD_OUT/services" ]
 then
-	applyPatch "overlay/services"
+    applyPatch "overlay/services"
+    rm $BUILD_OUT/services/smali/com/android/server/am/ActivityManagerService\$13\$1.smali
 fi
 
 if [ $2 = "$BUILD_OUT/android.policy" ]
 then
-	applyPatch "overlay/android.policy"
+    applyPatch "overlay/android.policy"
+    cp -rf overlay/android.policy/smali/* $BUILD_OUT/android.policy/smali
+    rm $BUILD_OUT/android.policy/smali/com/android/internal/policy/impl/PhoneWindowManager\$13\$1.smali
+    rm $BUILD_OUT/android.policy/smali/com/android/internal/policy/impl/PhoneWindowManager\$21\$1.smali
+    rm $BUILD_OUT/android.policy/smali/com/android/internal/policy/impl/GlobalActions\$4\$1\$1.smali
+    rm $BUILD_OUT/android.policy/smali/com/android/internal/policy/impl/GlobalActions\$4\$1.smali
 fi

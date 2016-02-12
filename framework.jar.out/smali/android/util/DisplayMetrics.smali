@@ -95,7 +95,7 @@
     .locals 3
 
     .prologue
-    const-string v0, "persist.nian.density"
+    const-string v0, "ro.Rexpect.display.density"
 
     const-string v1, "qemu.sf.lcd_density"
 
